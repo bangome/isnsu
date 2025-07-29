@@ -1,0 +1,35 @@
+{
+  "name": "@isnsu/sns-integrations",
+  "version": "1.0.0",
+  "description": "Social media platform integrations for ISNSU",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "test": "node test-basic.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "oauth": "^0.10.0",
+    "oauth-1.0a": "^2.2.6",
+    "form-data": "^4.0.0",
+    "mime-types": "^2.1.35",
+    "zod": "^3.22.4",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@types/mime-types": "^2.1.4",
+    "@types/oauth": "^0.9.4",
+    "@types/oauth-1.0a": "^1.0.2",
+    "jest": "^29.7.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0"
+  },
+  "keywords": ["social-media", "automation", "instagram", "facebook", "twitter", "linkedin", "ai"],
+  "author": "ISNSU Team",
+  "license": "MIT"
+}
